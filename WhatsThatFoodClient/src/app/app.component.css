@@ -1,5 +1,6 @@
 #full-page-container {
     background: #D14702;
+    overflow: hidden;
 }
 
 #main {
