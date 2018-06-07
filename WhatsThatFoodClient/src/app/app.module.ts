@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FileDropModule } from 'ngx-file-drop';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
@@ -21,7 +23,8 @@ import { LoadingComponent } from './shared/components/loading/loading.component'
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FileDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
