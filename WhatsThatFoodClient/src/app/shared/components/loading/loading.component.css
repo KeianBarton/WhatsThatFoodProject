@@ -1,0 +1,17 @@
+.loading-wheel {
+    font-size: 12rem !important;
+}
+
+/* iPads (portrait and landscape) */
+@media screen and (max-width: 600px) {
+    .loading-wheel {
+        font-size: 10rem;
+    }
+}
+
+/* mobile phones - small screens */
+@media screen and (max-width: 360px) {
+    .loading-wheel {
+        font-size: 8rem;
+    }
+}

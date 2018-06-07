@@ -26,7 +26,10 @@ import { LoadingComponent } from './shared/components/loading/loading.component'
     BrowserAnimationsModule,
     FileDropModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
