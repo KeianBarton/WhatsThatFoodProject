@@ -1,5 +1,5 @@
 <div id="page-container" class="col">
-    <div id="file-drop-container" class="h-100" *ngIf="!isFileUploaded" [@fadeOut]>
+    <div id="file-drop-container" class="h-100" *ngIf="!isFileUploaded" [@fadeOutAndZoom]>
         <file-drop customstyle="file-drop h-100" (onFileDrop)="dragAndDropFile($event)">
             <div id="centered-drag-and-drop" class="text-center align-middle">
                 <i id="upload-icon" class="fa fa-cloud-upload text-light"></i>

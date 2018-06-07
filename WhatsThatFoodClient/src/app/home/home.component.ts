@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 import { UploadEvent, FileSystemFileEntry } from 'ngx-file-drop';
 import { trigger, state, style, animate, transition, keyframes } from '@angular/animations';
 
@@ -7,20 +7,20 @@ import { trigger, state, style, animate, transition, keyframes } from '@angular/
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [
-    trigger('fadeOut', [
+    trigger('fadeOutAndZoom', [
       transition(':leave', [
-        animate('500ms ease-out', keyframes([
-          style({opacity: 1, offset: 0}),
-          style({opacity: 0, offset: 1})
+        animate('800ms ease-out', keyframes([
+          style({opacity: 1, transform: 'scale(1)', offset: 0}),
+          style({opacity: 0, transform: 'scale(0.9)', offset: 1})
         ]))
       ])
     ]),
     trigger('fadeIn', [
       transition(':enter', [
-        animate('1000ms ease-in', keyframes([
+        animate('1600ms ease-in', keyframes([
           style({opacity: 0, offset: 0}),
-          style({opacity: 0, offset: 0.5}),
-          style({opacity: 1, offset: 1})
+          style({opacity: 0, transform: 'scale(0.9)', offset: 0.5}),
+          style({opacity: 1, transform: 'scale(1)', offset: 1})
         ]))
       ])
     ])
@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
   public imgFile: string;
   public isFileUploaded = false;
 
-  constructor() { }
+  constructor(private zone: NgZone) { }
 
   ngOnInit() {
   }
@@ -64,7 +64,7 @@ export class HomeComponent implements OnInit {
     reader.readAsDataURL(file);
     reader.onload = function() {
       self.imgFile = reader.result;
-      self.isFileUploaded = true;
+      self.zone.run(() => { self.isFileUploaded = true; });
     };
     reader.onerror = function() {
       console.log(reader.error);
