@@ -2,8 +2,9 @@
     <file-drop customstyle="file-drop">
         <div id="centered-drag-and-drop" class="text-center align-middle">
             <i id="upload-icon" class="fa fa-cloud-upload text-light"></i>
-            <h2 class="font-weight-bold text-light">Drag and drop a file</h2>
-            <p class="text-light">or <span id="upload-link">browse your computer</span></p>
+            <div class="font-weight-bold text-light responsive-text-md-1">Drag and drop a file</div>
+            <p class="text-light responsive-text-xs">or <span id="upload-link" (click)="triggerFileInput()">browse your files</span></p>
+            <input id="upload-input" type="file" accept="image/*">
         </div>
     </file-drop>
 </div>

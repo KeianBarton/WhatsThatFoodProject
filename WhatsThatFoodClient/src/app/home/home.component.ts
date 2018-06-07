@@ -12,4 +12,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  triggerFileInput() {
+    document.getElementById('upload-input').click();
+  }
+
 }

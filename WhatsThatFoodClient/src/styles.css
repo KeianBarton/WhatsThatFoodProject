@@ -13,3 +13,105 @@ body {
 #dropZone > div {
     height: 100%;
 }
+
+#upload-icon {
+    font-size: 5rem;
+}
+
+.responsive-text-xxl {
+    font-size: 5rem;
+}
+
+.responsive-text-xl {
+    font-size: 4.5rem;
+}
+
+.responsive-text-lg {
+    font-size: 4rem;
+}
+
+.responsive-text-md-2 {
+    font-size: 3rem;
+}
+
+.responsive-text-md-1 {
+    font-size: 2.5rem;
+}
+
+.responsive-text-sm {
+    font-size: 2rem;
+}
+
+.responsive-text-xs {
+    font-size: 1.5rem;
+}
+
+/* iPads (portrait and landscape) */
+@media screen and (max-width: 600px) {
+    #upload-icon {
+        font-size: 4.5rem;
+    }
+
+    .responsive-text-xxl {
+        font-size: 4.5rem;
+    }
+
+    .responsive-text-xl {
+        font-size: 4rem;
+    }
+    
+    .responsive-text-lg {
+        font-size: 3.5rem;
+    }
+
+    .responsive-text-md-2 {
+        font-size: 2.5rem;
+    }
+    
+    .responsive-text-md-1 {
+        font-size: 2rem;
+    }
+    
+    .responsive-text-sm {
+        font-size: 1.5rem;
+    }
+    
+    .responsive-text-xs {
+        font-size: 1.25rem;
+    }
+}
+
+/* mobile phones - small screens */
+@media screen and (max-width: 360px) {
+    #upload-icon {
+        font-size: 4rem;
+    }
+    
+    .responsive-text-xxl {
+        font-size: 4rem;
+    }
+
+    .responsive-text-xl {
+        font-size: 3.5rem;
+    }
+    
+    .responsive-text-lg {
+        font-size: 3rem;
+    }
+    
+    .responsive-text-md-2 {
+        font-size: 2rem;
+    }
+    
+    .responsive-text-md-1 {
+        font-size: 1.5rem;
+    }
+    
+    .responsive-text-sm {
+        font-size: 1rem;
+    }
+    
+    .responsive-text-xs {
+        font-size: 1rem;
+    }
+}
