@@ -15,15 +15,6 @@ import { trigger, state, style, animate, transition, keyframes } from '@angular/
         ]))
       ])
     ]),
-    trigger('fadeIn', [
-      transition(':enter', [
-        animate('1600ms ease-in', keyframes([
-          style({opacity: 0, offset: 0}),
-          style({opacity: 0, transform: 'scale(0.9)', offset: 0.5}),
-          style({opacity: 1, transform: 'scale(1)', offset: 1})
-        ]))
-      ])
-    ])
   ]
 })
 export class HomeComponent implements OnInit {
