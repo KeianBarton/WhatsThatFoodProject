@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WhatsThatFood.Domain\WhatsThatFood.Domain.csproj" />
+    <ProjectReference Include="..\WhatsThatFood.Services\WhatsThatFood.Services.csproj" />
   </ItemGroup>
 
 </Project>

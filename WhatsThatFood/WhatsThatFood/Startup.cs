@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using WhatsThatFood.Services.Services;
 
 namespace WhatsThatFood
 {
@@ -24,6 +19,8 @@ namespace WhatsThatFood
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSingleton<IWatsonVisualRecognitionService, WatsonVisualRecognitionService>();
+            services.AddSingleton<IHttpProxyClientService, HttpProxyClientService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -4,6 +4,7 @@ namespace WhatsThatFood.Services.Services
 {
     public interface IWatsonVisualRecognitionService
     {
-        VisualRecognitionDto DetectFoodFromImage();
+        bool IsUserAuthenticated { get; }
+        VisualRecognitionDto DetectFoodFromImage(string base64ImageString);
     }
 }
