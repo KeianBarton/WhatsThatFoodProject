@@ -14,7 +14,7 @@
       "launchUrl": "api/values",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "Watson:ApiKey": "tfq9d2VefSNvXRWeFG0RY5hUQ3d7-Pb7JRE3cOVCi6TX"
+        "Watson:ApiKey": ""
       }
     },
     "WhatsThatFood": {
@@ -23,7 +23,7 @@
       "launchUrl": "api/values",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "Watson:ApiKey": "tfq9d2VefSNvXRWeFG0RY5hUQ3d7-Pb7JRE3cOVCi6TX"
+        "Watson:ApiKey": ""
       },
       "applicationUrl": "http://localhost:63031/"
     }
